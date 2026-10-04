@@ -1,0 +1,34 @@
+2026-10-02 17:19:18.051 | Note: dynamic-tools disabled when using --servers flag
+2026-10-02 17:19:18.053 | - Reading configuration...
+2026-10-02 17:19:18.053 |   - Reading catalog from [https://desktop.docker.com/mcp/catalog/v3/catalog.yaml]
+2026-10-02 17:19:18.605 |   - Reading config from /mcp_config.yaml
+2026-10-02 17:19:18.605 | - Configuration read in 552.164375ms
+2026-10-02 17:19:18.606 | - Using images:
+2026-10-02 17:19:18.606 |   - mcp/cockroachdb@sha256:4863594a246c6f86a5c4c87383a679353e9a6b4d85c3327c48464669cd236b1e
+2026-10-02 17:19:18.606 | - Verifying images [mcp/cockroachdb]
+2026-10-02 17:19:21.403 | > Images verified in 2.797319084s
+2026-10-02 17:19:21.430 | > Images pulled in 26.927875ms
+2026-10-02 17:19:21.432 | - Those servers are enabled: cockroachdb
+2026-10-02 17:19:21.432 | - Listing MCP tools...
+2026-10-02 17:19:21.432 |     - CRDB_PWD: pass****
+2026-10-02 17:19:21.432 |   - Running mcp/cockroachdb with [run --rm -i --init --security-opt no-new-privileges --cpus 1 --memory 2Gb --pull never -l docker-mcp=true -l docker-mcp-tool-type=mcp -l docker-mcp-name=cockroachdb -l docker-mcp-transport=stdio --network langgraph_default -e CRDB_PWD -e CRDB_HOST -e CRDB_PORT -e CRDB_DATABASE -e CRDB_USERNAME -e CRDB_SSL_MODE]
+2026-10-02 17:19:21.553 | - cockroachdb:    Building cockroachdb-mcp-server @ file:///app
+2026-10-02 17:19:23.329 | - cockroachdb:       Built cockroachdb-mcp-server @ file:///app
+2026-10-02 17:19:23.332 | - cockroachdb: Uninstalled 1 package in 1ms
+2026-10-02 17:19:23.333 | - cockroachdb: Installed 1 package in 0.90ms
+2026-10-02 17:19:23.908 | - cockroachdb: Starting the CockroachDB MCP Server
+2026-10-02 17:19:23.923 | - cockroachdb: [10/02/26 16:19:23] INFO     Processing request of type            server.py:523
+2026-10-02 17:19:23.923 | - cockroachdb:                              ListToolsRequest                                   
+2026-10-02 17:19:23.927 | - cockroachdb:                     INFO     Processing request of type            server.py:523
+2026-10-02 17:19:23.927 | - cockroachdb:                              ListPromptsRequest                                 
+2026-10-02 17:19:23.928 | - cockroachdb:                     INFO     Processing request of type            server.py:523
+2026-10-02 17:19:23.928 | - cockroachdb:                              ListResourcesRequest                               
+2026-10-02 17:19:23.930 | - cockroachdb:                     INFO     Processing request of type            server.py:523
+2026-10-02 17:19:23.930 | - cockroachdb:                              ListResourceTemplatesRequest                       
+2026-10-02 17:19:23.930 |   > cockroachdb: (1 tools)
+2026-10-02 17:19:24.080 | > 1 tools listed in 2.648120751s
+2026-10-02 17:19:24.080 | > Initialized in 6.029819003s
+2026-10-02 17:19:24.080 | WARNING: --allow-unauthenticated is exposing the MCP gateway without authentication on all interfaces. Any client that can reach this listener can execute configured MCP tools. Remove --allow-unauthenticated or bind with --host 127.0.0.1 unless this is intentional.
+2026-10-02 17:19:24.080 | > Start sse server on port 8811
+2026-10-02 17:19:24.080 | > Gateway URL: http://localhost:8811/sse
+2026-10-02 17:19:24.080 | > Authentication disabled by explicit configuration
